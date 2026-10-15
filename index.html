@@ -5,44 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Database</title>
 </head>
-<body style="font-family: Arial, sans-serif;">
+<body style="font-family: Arial, sans-serif; text-align: center;">
     <h1>Movie Database</h1>
-    <input type="text" placeholder="Search movies...">
-<ul style="font-size:30px;">
-<h1>Top 5 Movies</h1>
-<ul  style= "font-size:30px; color: rgb(221, 19, 19);">
-    <li style="text-align: center;">The Shawshank Redemption
-    <a href="https://www.rottentomatoes.com/m/shawshank_redemption">View on Rotten Tomatoes</a>
-    </li>
-    
-    <li style="text-align: center;">The Godfather
-    <a href="https://www.rottentomatoes.com/m/godfather">View on Rotten Tomatoes</a>
-    
-    </li>
-    <li style="text-align: center;">The Dark Knight
-    <a href="https://www.rottentomatoes.com/m/the_dark_knight">View on Rotten Tomatoes</a>
+    <input type="text" placeholder="Search movies..." aria-label="Search movies">
 
-    </li>
-    <li style="text-align: center;">The Lord of the Rings: The Return of the King
-    <a href="https://www.rottentomatoes.com/m/the_lord_of_the_rings_the_return_of_the_king">View on Rotten Tomatoes</a>
+    <h1>Top 5 Movies</h1>
 
-    </li>
-    <li style="text-align: center;">Pulp Fiction
-    <a href="https://www.rottentomatoes.com/m/pulp_fiction">View on Rotten Tomatoes</a>
+    <ul style="font-size: 30px; color: rgb(221, 19, 19); list-style-position: inside; padding: 0;">
+        <li>
+            The Shawshank Redemption
+            <a href="https://www.rottentomatoes.com/m/shawshank_redemption">View on Rotten Tomatoes</a>
+        </li>
 
-    </li>
-</ul>
+        <li>
+            The Godfather
+            <a href="https://www.rottentomatoes.com/m/godfather">View on Rotten Tomatoes</a>
+        </li>
 
+        <li>
+            The Dark Knight
+            <a href="https://www.rottentomatoes.com/m/the_dark_knight">View on Rotten Tomatoes</a>
+        </li>
 
-<h2 style="font-size: 25px;">Newsletter signup</h2>
-<form style="font-size: 15px;">
+        <li>
+            The Lord of the Rings: The Return of the King
+            <a href="https://www.rottentomatoes.com/m/the_lord_of_the_rings_the_return_of_the_king">View on Rotten Tomatoes</a>
+        </li>
 
-First Name: <input type="text" name="firstname"><br><br>
-Last Name: <input type="text" name="lastname"><br><br>
-Email: <input type="email" name="email"><br><br>
-<button type="submit">Submit</button>
+        <li>
+            Pulp Fiction
+            <a href="https://www.rottentomatoes.com/m/pulp_fiction">View on Rotten Tomatoes</a>
+        </li>
+    </ul>
 
-</form>
+    <h2 style="font-size: 25px;">Newsletter signup</h2>
 
+    <form style="font-size: 15px; display: inline-block; text-align: left;">
+        <label for="firstname" style="display: inline-block; width: 85px;">First Name:</label>
+        <input type="text" id="firstname" name="firstname"><br><br>
+
+        <label for="lastname" style="display: inline-block; width: 85px;">Last Name:</label>
+        <input type="text" id="lastname" name="lastname"><br><br>
+
+        <label for="email" style="display: inline-block; width: 85px;">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <div style="text-align: center;">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 </html>
